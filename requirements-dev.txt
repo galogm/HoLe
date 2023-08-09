@@ -1,0 +1,15 @@
+pre-commit
+pylint
+yapf
+black
+mdformat
+mdformat_gfm
+mdformat_frontmatter
+mdformat_footnote
+virtualenv
+jupyter
+notebook
+sphinx
+sphinx_copybutton
+sphinx_rtd_theme
+python-semantic-release
