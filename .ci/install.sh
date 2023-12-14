@@ -1,15 +1,15 @@
-# install python 3.7.16, e.g., if using pyenv, run:
-# pyenv install 3.7.16
-# pyenv local 3.7.16
+# install python 3.8, e.g., if using pyenv, run:
+# pyenv install 3.8
+# pyenv local 3.8
 
 # create and activate virtual environment
-if [ ! -d '.venv' ]; then
-    python3 -m venv .venv && echo create venv
+if [ ! -d '.env' ]; then
+    python3 -m venv .env && echo create venv
 else
     echo venv exists
 fi
 
-source .venv/bin/activate
+source .env/bin/activate
 
 # # update pip
 # python -m pip install -U pip

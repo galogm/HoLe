@@ -4,7 +4,8 @@ import numpy as np
 import torch
 from scipy.optimize import linear_sum_assignment as linear_assignment
 from sklearn.metrics import accuracy_score as ACC
-from sklearn.metrics import adjusted_mutual_info_score as NMI
+from sklearn.metrics import adjusted_mutual_info_score as AMI
+from sklearn.metrics import normalized_mutual_info_score as NMI
 from sklearn.metrics import adjusted_rand_score as ARI
 from sklearn.metrics import f1_score as F1
 from sklearn.metrics.cluster import contingency_matrix as ctg
@@ -74,8 +75,9 @@ def evaluation(
     labels_true, labels_pred = best_mapping(labels_true, labels_pred)
     ARI_score = ARI(labels_true, labels_pred)
     NMI_score = NMI(labels_true, labels_pred)
+    AMI_score = AMI(labels_true, labels_pred)
     ACC_score = ACC(labels_true, labels_pred)
     Micro_F1_score = F1(labels_true, labels_pred, average="micro")
     Macro_F1_score = F1(labels_true, labels_pred, average="macro")
     purity_score = purity(labels_true, labels_pred)
-    return ARI_score, NMI_score, ACC_score, Micro_F1_score, Macro_F1_score, purity_score
+    return ARI_score, NMI_score, AMI_score, ACC_score, Micro_F1_score, Macro_F1_score, purity_score

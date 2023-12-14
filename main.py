@@ -292,6 +292,7 @@ if __name__ == "__main__":
                                 (
                                     ARI_score,
                                     NMI_score,
+                                    AMI_score,
                                     ACC_score,
                                     Micro_F1_score,
                                     Macro_F1_score,
@@ -301,6 +302,7 @@ if __name__ == "__main__":
                                 print("\n"
                                       f"ARI:{ARI_score}\n"
                                       f"NMI:{ NMI_score}\n"
+                                      f"AMI:{ AMI_score}\n"
                                       f"ACC:{ACC_score}\n"
                                       f"Micro F1:{Micro_F1_score}\n"
                                       f"Macro F1:{Macro_F1_score}\n"

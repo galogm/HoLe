@@ -8,7 +8,7 @@ An implementation of the CIKM'23 paper: [Homophily-enhanced Structure Learning f
 - See [install-dev.sh](./.ci/install-dev.sh) and [install.sh](./install.sh) for installation scripts.
 
 ```bash
-# Install python>=3.7.16.
+# Install python>=3.8.
 
 # Install dev requirements:
 $ bash .ci/install-dev.sh
@@ -22,7 +22,7 @@ $ bash .ci/install.sh
 
 ```bash
 # Activate the env, e.g., for linux run:
-$ source .venv/bin/activate
+$ source .env/bin/activate
 
 # Run HoLe:
 $ python main.py --dataset Cora --gpu_id 0

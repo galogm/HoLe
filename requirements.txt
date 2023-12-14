@@ -4,6 +4,6 @@ dglgo
 ogb
 numpy
 scipy
-scikit-learn
-graph_datasets
+scikit-learn>=1.3.2
+graph_datasets>=0.8.2
 tensorboard
